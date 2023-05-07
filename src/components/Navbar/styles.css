@@ -1,0 +1,31 @@
+.container_navbar{
+    position: fixed;
+    width: 60px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+
+    background: #121216;
+
+}
+.navbar_nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.6rem;
+    align-items: center;
+    padding-top: 37.6rem;
+}
+.navbar_nav img{
+    width: 2.5rem;
+    height: 2.5rem;
+
+    cursor: pointer;
+    transition: 5s;
+}
+.line img{
+    width: 5px;
+    height: 108px;
+    left: 39px;
+    top: 555px;
+}

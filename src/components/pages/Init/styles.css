@@ -1,6 +1,6 @@
 .container_init{
-    position: relative;
-    display: flex;
+    position: absolute;
+    display: none;
     height:calc(100vh - 60px);
     width: calc(100vw - 60px);
 
@@ -34,7 +34,7 @@
     font-style: normal;
     font-weight: 800;
     font-size: 64px;
-
+    white-space: nowrap;
 
     background: linear-gradient(90.74deg, #964862 17.71%, #1C2F54 74.63%);
     -webkit-background-clip: text;
@@ -70,19 +70,5 @@
         transform:translate(3%, 0%); 
     } to {
         transform:translate(0%, 0%);
-    }
-}
-.descripton_function{
-    display: flex;
-    gap: 3px;
-}
-.descripton_function p:last-child{
-    animation: cursor 0.8s ease infinite;
-}
-@keyframes cursor {
-    from {
-        opacity: 0;
-    } to {
-        opacity: 100%;
     }
 }

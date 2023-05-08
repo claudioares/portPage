@@ -8,9 +8,9 @@ export default function Header () {
             <div className="container_header">
                 <nav className="nav">
                     <ul className='ul'>
-                        <a href="">Inicio</a>
-                        <a href="">Sobre mim</a>
-                        <a href="">Aplicações</a>
+                        <a href="/">Inicio</a>
+                        <a href="/abautme">Sobre mim</a>
+                        <a href="/aplications">Aplicações</a>
                     </ul>
                 </nav>
             </div>

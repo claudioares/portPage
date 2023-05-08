@@ -1,7 +1,7 @@
 .container_navbar{
-    position: fixed;
+    position: relative;
     width: 60px;
-    height: 1024px;
+    height: calc(100vh - 60px);
     left: 0px;
     top: 0px;
 
@@ -16,7 +16,7 @@
     align-items: center;
     padding-top: 37.6rem;
 }
-.navbar_nav img{
+.navbar_nav img:first-child{
     width: 2.5rem;
     height: 2.5rem;
 
@@ -24,8 +24,10 @@
     transition: 5s;
 }
 .line img{
-    width: 5px;
-    height: 108px;
+    width: 2.5rem;
+
+    height: 2.5rem;
+
     left: 39px;
-    top: 555px;
+    top: 585px;
 }

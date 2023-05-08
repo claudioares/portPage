@@ -1,0 +1,33 @@
+.typing_function{
+    display: flex;
+    gap: 2px;
+}
+.typing_function p:last-child{
+    animation: cursor 0.6s ease infinite;
+}
+@keyframes cursor {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 100%;
+    }
+}
+.description{
+    width: 273px;
+    animation: typingText 7s steps(38) 1s normal infinite;
+    white-space: nowrap;
+    overflow: hidden;
+}
+@keyframes typingText{
+    from{
+        width: 273px;
+    } 25%{
+        width: 0px;
+    } 50%{
+        width: 0px;
+    } 75%{
+        width: 273px;
+    } to {
+        width: 273px;
+    }
+}

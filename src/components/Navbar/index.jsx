@@ -33,7 +33,7 @@ export default function Navbar () {
             {icon:gitHover, alt: 'Logo do github'}
         ]);
     }
-    function mouseOut (e) {
+    function mouseOut () {
         SetIconSocialContact([
             {icon:link, alt: 'Logo do linkedin'},
             {icon:whats, alt: 'Logo do whatsapp'},
@@ -48,7 +48,7 @@ export default function Navbar () {
                         <img 
                             src={obj.icon} alt={obj.alt}
                             onMouseOver={(e)=>mauseOver(e)}
-                            onMouseOut={(e)=>mouseOut(e)}
+                            onMouseOut={()=>mouseOut()}
                         />
                     </div>
                 ))

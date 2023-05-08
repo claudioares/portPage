@@ -6,7 +6,7 @@ export default function Init () {
 
     return (
         <>
-            <div className="container_init">
+            <div className="container init">
                 <div className="part">
                     <div className="left">
                         <h1>Cláudio Soares</h1>

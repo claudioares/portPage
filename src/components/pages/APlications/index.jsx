@@ -3,6 +3,10 @@ import './styles.css';
 
 export default function Aplications () {
     return (
-        <h1>Page init</h1>
+        <>
+            <div className="container _aplications">
+                <h1>Minhas aplicações</h1>
+            </div>
+        </>
     )
 }

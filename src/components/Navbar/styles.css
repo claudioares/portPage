@@ -1,33 +1,23 @@
-.container_navbar{
-    position: relative;
-    width: 60px;
-    height: calc(100vh - 60px);
-    left: 0px;
-    top: 0px;
+.container_navbar {
+  position: relative;
+  width: 6rem;
+  height: calc(100vh - 6rem);
 
-    background: #121216;
-
+  background: #121216;
 }
-.navbar_nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2.6rem;
-    align-items: center;
-    padding-top: 37.6rem;
+.navbar_nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.6rem;
+  align-items: center;
+  padding-top: 37.6rem;
 }
-.navbar_nav img:first-child{
-    width: 2.5rem;
-    height: 2.5rem;
-
-    cursor: pointer;
-    transition: 5s;
+.navbar_nav img {
+  cursor: pointer;
+  transition: 5s;
 }
-.line img{
-    width: 2.5rem;
 
-    height: 2.5rem;
-
-    left: 39px;
-    top: 585px;
+.line img {
+  cursor: none;
 }

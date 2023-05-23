@@ -6,7 +6,7 @@
 
   overflow: hidden;
   height: calc(100vh - 60px);
-  width: calc(100vw - 60px);
+  width: 100vw;
 
   top: 0;
   z-index: -1;

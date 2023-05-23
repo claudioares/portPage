@@ -7,6 +7,7 @@ export default function Header () {
         <>
             <div className="container_header">
                 <nav className="nav">
+                    
                     <ul className='ul'>
                         <a href="/">Inicio</a>
                         <a href="/abautme">Sobre mim</a>

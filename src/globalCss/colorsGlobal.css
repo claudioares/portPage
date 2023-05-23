@@ -1,0 +1,19 @@
+.red {
+  color: #964862;
+}
+.yellow {
+  color: yellow;
+}
+.green {
+  color: rgb(21, 119, 119);
+}
+.gray {
+  color: gray;
+}
+.white {
+  color: white;
+}
+
+a:hover {
+  color: #964862;
+}

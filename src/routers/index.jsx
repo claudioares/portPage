@@ -1,9 +1,9 @@
 import {Route, Routes} from 'react-router-dom';
-import Home from '../Home';
+import Init from '../pages/Init';
 import Header from '../components/header';
 import Navbar from '../components/Navbar';
-import Aboutme from '../components/pages/Aboutme';
-import Aplications from '../components/pages/APlications';
+import Aboutme from '../pages/Aboutme';
+import Aplications from '../pages/APlications';
 
 export default function MainHouter () {
     return(
@@ -12,7 +12,7 @@ export default function MainHouter () {
                 <>
                     <Header />
                     <Navbar />
-                    <Home />
+                    <Init />
                 </>
             } >
             </Route>

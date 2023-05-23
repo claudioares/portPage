@@ -1,0 +1,59 @@
+.divProjects {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  overflow: hidden;
+
+  height: 41.3rem;
+  width: 100%;
+
+  top: 6rem;
+
+  color: white;
+}
+.container_projects {
+  padding: 6.3rem 0;
+  background: linear-gradient(90.74deg, #964862 17.71%, #f1eab4 105.63%);
+  -webkit-text-fill-color: transparent;
+  height: 31.3rem;
+  width: 100vw;
+}
+
+.conainer_carousel {
+  display: flex;
+  height: 28.5rem;
+  gap: 1rem;
+}
+.conainer_carousel img {
+  width: 35.1rem;
+  max-height: 24.5rem;
+  border-radius: 1rem;
+
+  border: 1px solid grey;
+  background-color: rgba(238, 238, 238, 0.105);
+  box-shadow: 8px 5px 8px #88888839;
+  background-size: cover;
+
+  transform: translateX(-11px) rotate(10deg) translateY(5px);
+  animation: caroussel 40s infinite linear;
+}
+@keyframes caroussel {
+  from {
+    transform: translateX(-11px) rotate(10deg) translateY(5px);
+  }
+  to {
+    transform: translatex(-2240px) rotate(10deg) translateY(5px);
+  }
+}
+
+.container_test_projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  color: white;
+}

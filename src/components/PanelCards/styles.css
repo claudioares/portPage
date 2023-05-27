@@ -13,6 +13,8 @@
   top: 6rem;
 
   color: white;
+
+  z-index: -1;
 }
 .container_projects {
   padding: 6.3rem 0;
@@ -37,15 +39,15 @@
   box-shadow: 8px 5px 8px #88888839;
   background-size: cover;
 
-  transform: translateX(-11px) rotate(10deg) translateY(5px);
+  transform: translateX(-11px);
   animation: caroussel 40s infinite linear;
 }
 @keyframes caroussel {
   from {
-    transform: translateX(-11px) rotate(10deg) translateY(5px);
+    transform: translateX(-11px);
   }
   to {
-    transform: translatex(-2240px) rotate(10deg) translateY(5px);
+    transform: translatex(-2240px);
   }
 }
 

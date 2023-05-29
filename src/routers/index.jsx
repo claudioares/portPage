@@ -1,9 +1,9 @@
 import {Route, Routes} from 'react-router-dom';
-import Init from '../pages/Init';
+import Init from '../PAGES/Init';
 import Header from '../components/header';
 import Navbar from '../components/Navbar';
-import Aboutme from '../pages/Aboutme';
-import Aplications from '../pages/APlications';
+import Aboutme from '../PAGES/Aboutme';
+import Aplications from '../PAGES/APlications';
 
 export default function MainHouter () {
     return(

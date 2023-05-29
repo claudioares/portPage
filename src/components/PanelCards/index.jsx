@@ -1,13 +1,13 @@
 import cards from '../../utils';
 import './styles.css';
 
-export default function Projects() {
+export default function PanelCards() {
   
 
     return (
     
         <div className='divProjects' id='aplicacoes'>
-            {/* <h2>Projects</h2> */}
+        
             <div className="container_projects">
                 <div className="conainer_carousel">
                     {cards.map(card => (

@@ -26,36 +26,27 @@
 
 .conainer_carousel {
   display: flex;
-  height: 28.5rem;
+  height: 31.3rem;
+
   gap: 1rem;
 }
 .conainer_carousel img {
-  width: 35.1rem;
-  max-height: 24.5rem;
+  width: 31.1rem;
+  max-height: 17.5rem;
   border-radius: 1rem;
 
-  border: 1px solid grey;
-  background-color: rgba(238, 238, 238, 0.105);
   box-shadow: 8px 5px 8px #88888839;
   background-size: cover;
 
-  transform: translateX(-11px);
+  transform: translateX(-11px) rotate(-15deg);
   animation: caroussel 40s infinite linear;
 }
 @keyframes caroussel {
   from {
-    transform: translateX(-11px);
+    transform: translateX(-11px) rotate(-15deg);
   }
   to {
-    transform: translatex(-2240px);
+    transform: translatex(-2040px) rotate(-15deg);
   }
 }
 
-.container_test_projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem;
-  color: white;
-}

@@ -1,0 +1,56 @@
+#rotation{
+    animation: circle 50s linear infinite ;
+}
+@keyframes circle {
+  
+    100%{
+        rotate: 360deg;
+    }
+}
+
+
+#rotationReverse{
+    animation: circleReverse 50s linear infinite ;
+}
+@keyframes circleReverse {
+  
+    100%{
+        rotate: -360deg;
+    }
+}
+
+#rotationToClicEvent{
+    animation: eventClick 4s ease-out;
+}
+@keyframes eventClick {
+  
+    100%{
+        rotate: 360deg;
+    }
+}
+
+#iconsAll360 {
+    animation: iconsAll360 5s ease
+}
+@keyframes iconsAll360 {
+    from{
+        rotate: 0deg;
+    }
+      
+    to{
+        rotate: 360deg;
+    }
+}
+
+#iconsAll360 {
+    animation: iconsAll360 5s ease
+}
+@keyframes iconsAll90 {
+    from{
+        rotate: 0deg;
+    }
+      
+    to{
+        rotate: 90deg;
+    }
+}

@@ -22,20 +22,23 @@ import greenCurriculum from '../assets/about/icons/curriculum/green.svg';
 
 export const iconsColors = [
     {
-        white: whiteExperience,
-        metalic: metalicExperience
-    },
-    {
-        white: whiteProjects,
-        yellow: yellowProjects
-    },
-    {
-        white: whiteFormation,
-        pink: pinkFormation
-    },
-    {
-        white: whiteCurriculum,
-        green: greenCurriculum
+
+        experience : {
+            white: whiteExperience,
+            metalic: metalicExperience
+        },
+        projects : {
+            white: whiteProjects,
+            yellow: yellowProjects
+        },
+        formations : {
+            white: whiteFormation,
+            pink: pinkFormation
+        },
+        curriculum : {
+            white: whiteCurriculum,
+            green: greenCurriculum
+        }
     }
 ]
 

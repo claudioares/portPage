@@ -1,4 +1,13 @@
-.container_icon_navegation{
+.container_icon{
+    position: relative;
+
+    width: 35rem;
+    height: 35rem;
+
+    transform: rotate(45deg);
+
+}
+.content_icon{
     position: absolute;
     display: flex;
     align-items: center;
@@ -11,8 +20,22 @@
     border: 3px solid rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.198);
 
-    top: 15rem;
 
     cursor: pointer;
-
+}
+.experience{
+    transform: rotate(-45deg);
+}
+.formation{
+    right:0;
+    transform: rotate(-45deg);
+}
+.project{
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+.curriculum{
+    bottom: 0;
+    right: 0;
+    transform: rotate(-45deg);
 }

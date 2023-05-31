@@ -8,20 +8,10 @@ import IconToNavegation from './iconNavegation';
 
 const AboutmeBody = () =>{
 
-    const {activeRotateGear, setActiveRotateGear} = useContext(ContextApi);
+    const {
+        animateFunctionClickEvent
+    } = useContext(ContextApi);
 
-    const animateGearCenterWhite = () =>{
-       
-        if(activeRotateGear === null){
-            setActiveRotateGear('rotationToClicEvent')
-        } else {
-            return;
-        }
-
-        setTimeout(()=>{
-            setActiveRotateGear(null);
-        }, 4000)
-    }
 
     return(
         <>
@@ -30,8 +20,8 @@ const AboutmeBody = () =>{
                     <BgGear />
                     <IconToNavegation />
                     <div 
-                        className="circle_ one"
-                        onClick={()=>{animateGearCenterWhite()}}
+                        className="circle_ one "
+                        onClick={()=>{animateFunctionClickEvent()}}
                     >
                         <div className="circle_ two">
                             <div className="circle_ tree">

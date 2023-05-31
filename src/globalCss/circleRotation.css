@@ -1,4 +1,26 @@
-#rotation{
+.rotation_init_gear{
+    animation: eventClick 4s ease-out;
+}
+@keyframes eventClick {
+  
+    100%{
+        rotate: 360deg;
+    }
+}
+.rotation_init{
+    animation: rotate_init 4s ease-in-out;
+}
+@keyframes rotate_init {
+    0%{
+        transform: scale(0.7);
+    }
+    100%{
+        rotate: 360deg;
+        transform: scale(none);
+    }
+}
+
+.rotation{
     animation: circle 50s linear infinite ;
 }
 @keyframes circle {
@@ -10,7 +32,7 @@
 
 
 #rotationReverse{
-    animation: circleReverse 50s linear infinite ;
+    animation: circleReverse 50s linear infinite;
 }
 @keyframes circleReverse {
   

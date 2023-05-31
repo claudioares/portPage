@@ -14,14 +14,15 @@ const BgGear = () =>{
     return(
         <>
             <div className="container_gear">
-                <img src={gearOne} alt="" className='gear gOne' id='rotation' />
+                <img src={gearOne} alt="" className='gear gOne' id='rotationReverse' />
                 <img src={gearTwo} alt="" className='gear gTwo' id='rotationReverse' />
-                <img 
-                    src={gearTwo} 
-                    alt="Uma engrenagem de com braca" 
-                    className='gcenterWhite'
-                    id={activeRotateGear}
-                />
+                <div className="container_center" id={activeRotateGear}>
+                    <img 
+                        src={gearTwo} 
+                        alt="Uma engrenagem de com braca" 
+                        className='gcenterWhite rotation_init_gear'
+                    />
+                </div>
                 <img src={gearTree} alt="" className='gear gTree' id='rotationReverse' />
                 <img src={gearBg} alt="" className='gear gBg' />  
             </div>

@@ -1,0 +1,8 @@
+.container_icon_init{
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+
+    border: 1px solid white;
+    color: blueviolet;
+}

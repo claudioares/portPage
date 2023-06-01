@@ -6,14 +6,11 @@ export default function PanelCards() {
 
     return (
     
-        <div className='divProjects' id='aplicacoes'>
-        
-            <div className="container_projects">
-                <div className="conainer_carousel">
-                    {cards.map(card => (
-                        <img src={card.img} alt='Imagem de um card' key={card.id} />
-                    ))}
-                </div>
+        <div className='divProjects' id='aplicacoes'>   
+            <div className="conainer_carousel">
+                {cards.map(card => (
+                    <img src={card.img} alt='Imagem de um card' key={card.id} />
+                ))}
             </div>
         </div>
     )

@@ -1,14 +1,4 @@
-.part {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  width: 50%;
-  height: 100%;
-}
 .left {
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,42 +23,10 @@
   background-clip: text;
 }
 
-.right {
-  position: absolute;
-  right: 0;
-
-  margin: 6rem;
+.right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 50%;
   height: 100%;
-}
-.right img {
-  display: block;
-
-  width: 80rem;
-  height: 80rem;
-
-  animation: programer 40s linear infinite;
-}
-
-@keyframes programer {
-  from {
-    position: absolute;
-    transform: translate(0%);
-  }
-  25% {
-    position: absolute;
-    transform: translate(2%, -2%);
-  }
-  50% {
-    position: absolute;
-    transform: translate(4%, -2%);
-  }
-  65% {
-    position: absolute;
-    transform: translate(4%, 0%);
-  }
-  to {
-    position: absolute;
-    transform: translate(0%, 0%);
-  }
 }

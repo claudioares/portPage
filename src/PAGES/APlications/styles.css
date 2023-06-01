@@ -1,3 +1,34 @@
 ._aplications {
-  color: aliceblue;
+  position: relative;
+  min-height: 100vh;
+}
+.container_app_test{
+  position: absolute;
+
+  height: 75%;
+  width: 96.5%;
+  padding: 2rem;
+
+  bottom:0.3%;
+  right:0.3%;
+}
+.container_app_test h2{
+  text-decoration: underline;
+}
+.content_aplications_to_test{
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+
+  padding: 2rem 0;
+}
+.content_cards{
+  text-align: center;
+  background-color: rgba(108, 108, 108, 0.567);
+  border: 1px solid rgba(206, 206, 206, 0.359);
+
+  width: calc(100% / 3);
+  padding: 2rem;
 }

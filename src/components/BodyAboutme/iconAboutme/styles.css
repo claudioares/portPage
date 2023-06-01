@@ -1,0 +1,14 @@
+
+.align_icon{
+    transform: rotate(-45deg);
+}
+.formation{
+    right:0;
+}
+.project{
+    bottom: 0;
+}
+.curriculum{
+    bottom: 0;
+    right: 0;
+}

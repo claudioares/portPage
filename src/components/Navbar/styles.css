@@ -4,6 +4,8 @@
   height: calc(100vh - 6rem);
 
   background: #121216;
+
+  z-index: 9999;
 }
 .navbar_nav {
   display: flex;

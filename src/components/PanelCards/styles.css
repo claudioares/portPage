@@ -1,52 +1,44 @@
 .divProjects {
-  position: absolute;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: center;
 
   overflow: hidden;
 
-  height: 41.3rem;
+  min-height: calc(100vh - 12rem);
   width: 100%;
 
-  top: 6rem;
-
-  color: white;
-
-  z-index: -1;
-}
-.container_projects {
-  padding: 6.3rem 0;
-  background: linear-gradient(90.74deg, #964862 17.71%, #f1eab4 105.63%);
-  -webkit-text-fill-color: transparent;
-  height: 31.3rem;
-  width: 100vw;
+  z-index: 999;
 }
 
 .conainer_carousel {
+  
   display: flex;
-  height: 31.3rem;
+  align-items: center;
+  height: 16.3rem;
+
+  background-color: rgba(128, 128, 128, 0.495);
+  border: 1px solid gray;
 
   gap: 1rem;
 }
 .conainer_carousel img {
-  width: 31.1rem;
+  width: 15.1rem;
   max-height: 17.5rem;
   border-radius: 1rem;
 
-  box-shadow: 8px 5px 8px #88888839;
   background-size: cover;
 
   transform: translateX(-11px) rotate(-15deg);
-  animation: caroussel 40s infinite linear;
+  animation: caroussel 30s infinite linear;
 }
 @keyframes caroussel {
   from {
     transform: translateX(-11px) rotate(-15deg);
   }
   to {
-    transform: translatex(-2040px) rotate(-15deg);
+    transform: translatex(-980px) rotate(-15deg);
   }
 }
 

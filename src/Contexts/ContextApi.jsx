@@ -20,11 +20,12 @@ function ContextProvider ({ children }) {
         }, 4000)
     }
 
+  
 
     return(
         <ContextApi.Provider value={{
             activeRotateGear, setActiveRotateGear,
-            animateFunctionClickEvent,
+            animateFunctionClickEvent
         }}>
             {children}
         </ContextApi.Provider>

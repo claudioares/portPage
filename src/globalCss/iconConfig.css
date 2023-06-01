@@ -23,19 +23,3 @@
 
     cursor: pointer;
 }
-.experience{
-    transform: rotate(-45deg);
-}
-.formation{
-    right:0;
-    transform: rotate(-45deg);
-}
-.project{
-    bottom: 0;
-    transform: rotate(-45deg);
-}
-.curriculum{
-    bottom: 0;
-    right: 0;
-    transform: rotate(-45deg);
-}

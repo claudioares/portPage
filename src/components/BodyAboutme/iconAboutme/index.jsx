@@ -8,12 +8,13 @@ import './styles.css';
 const IconToNavegation = () =>{
 
     const {
-        activeRotateGear
+        activeRotateGear,
     } = useContext(ContextApi);
     const {
         activeMauseOver,
         activeMouseOut,
-        iconsColorsAll
+        iconsColorsAll,
+        activeIconSelect
     } = useContext(ContextHoverProvider)
 
     const [classActiveAnimateIcons, setClassActiveAniteIcons] = useState(
@@ -23,11 +24,6 @@ const IconToNavegation = () =>{
         activeRotateGear && setClassActiveAniteIcons("container_icon");
     }, [activeRotateGear])
 
-  
-    const activeExperience = (e) =>{
-        console.log(e.target.id)
-    }
-
 
 
     return(
@@ -35,17 +31,17 @@ const IconToNavegation = () =>{
             <div className="container_center">
                 <div className={classActiveAnimateIcons} id={activeRotateGear}>
                     <div 
-                        className="content_icon experience"
-                        onClick={(e)=>activeExperience(e)}
+                        className="content_icon align_icon experience"
+                        onClick={(e)=>activeIconSelect(e)}
                         onMouseOver={(e)=>activeMauseOver(e)}
                         onMouseOut={(e)=>activeMouseOut(e)}
                     >
-                        <img src={iconsColorsAll.experience} alt="" id='experience' />
+                        <img src={iconsColorsAll.experience} alt="icone de experiencia" id='experience' />
                     </div>
                     
                     <div 
-                        className="content_icon formation"
-                        onClick={(e)=>activeExperience(e)}
+                        className="content_icon align_icon formation"
+                        onClick={(e)=>activeIconSelect(e)}
                         onMouseOver={(e)=>activeMauseOver(e)}
                         onMouseOut={(e)=>activeMouseOut(e)}
                     >
@@ -53,8 +49,8 @@ const IconToNavegation = () =>{
                     </div>
 
                     <div 
-                        className="content_icon project"
-                        onClick={(e)=>activeExperience(e)}
+                        className="content_icon align_icon project"
+                        onClick={(e)=>activeIconSelect(e)}
                         onMouseOver={(e)=>activeMauseOver(e)}
                         onMouseOut={(e)=>activeMouseOut(e)}
                     >
@@ -62,8 +58,8 @@ const IconToNavegation = () =>{
                     </div>
 
                     <div 
-                        className="content_icon curriculum"
-                        onClick={(e)=>activeExperience(e)}
+                        className="content_icon align_icon curriculum"
+                        onClick={(e)=>activeIconSelect(e)}
                         onMouseOver={(e)=>activeMauseOver(e)}
                         onMouseOut={(e)=>activeMouseOut(e)}
                     >

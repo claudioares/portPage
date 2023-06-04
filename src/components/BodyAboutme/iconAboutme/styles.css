@@ -1,7 +1,10 @@
 
 .align_icon{
-    transform: rotate(-45deg);
+    transform: rotate(1deg);
+    transition-duration: 1.5s;
 }
+
+
 .formation{
     right:0;
 }

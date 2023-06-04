@@ -1,10 +1,13 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import './styles.css';
 import { Outlet } from 'react-router-dom';
 import { useNavigate, useResolvedPath } from 'react-router-dom';
+import { ContextHoverProvider } from '../../Contexts/ContextFunctionsHover';
 
 
 export default function Header () {
+
+    const {resetStateInit} = useContext(ContextHoverProvider)
     const navegate = useNavigate();
     const {
         pathname
@@ -82,9 +85,23 @@ export default function Header () {
             <div className="container_header">
                 <nav className="nav">
                     <ul className='ul' onClick={(e)=>{handleClickOptionsHeader(e)}}>
-                        <a href="/" style={{color:colorOfSelect.init}} id='init'>Inicio</a>
-                        <a href="/abautme" style={{color:colorOfSelect.abautme}} id='aboutme'>Sobre mim</a>
-                        <a href="/aplications" style={{color:colorOfSelect.aplications}} id='aplications'>Aplicações</a>
+                        <a 
+                            href="/" 
+                            style={{color:colorOfSelect.init}} 
+                            id='init'
+                            onClick={()=>resetStateInit()}
+                        >Inicio</a>
+                        <a 
+                            href="/abautme" 
+                            style={{color:colorOfSelect.abautme}} 
+                            id='aboutme'
+                        >Sobre mim</a>
+                        <a 
+                            href="/aplications" 
+                            style={{color:colorOfSelect.aplications}} 
+                            id='aplications'
+                            onClick={()=>resetStateInit()}
+                        >Aplicações</a>
                     </ul>
                 </nav>
             </div>

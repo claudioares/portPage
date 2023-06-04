@@ -1,0 +1,72 @@
+.div_aling_modal{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 80vh;
+    width: 80vw;
+}
+.container_modal{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 80vh;
+
+    padding: 3rem;
+
+    background-color: rgba(7, 9, 9, 0.87);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(49, 94, 90, 0.87);
+
+    top: 0;
+
+    z-index: 999;
+
+}
+p{
+    font-size: 2rem;
+    text-align: center;
+    text-decoration:dashed;
+
+    margin-top: 1rem;
+}
+.modal_animetion_open{
+    animation: modalAnimationOpen 1s linear;
+}
+
+@keyframes modalAnimationOpen {
+    from{
+        height: 0vh;
+    } 25% {
+        height: 25vh;
+    } 50%{
+        height: 50vh;
+    } 75%{
+        height: 75vh;
+    } to {
+        height: 100vh;
+    }
+}
+
+.modal_animation_close{
+    animation: modalAnimationClose 1s linear;
+};
+
+@keyframes modalAnimationClose {
+    from{
+        height: 100vh;
+    } 25% {
+        height: 75vh;
+    } 50%{
+        height: 50vh;
+    } 75%{
+        height: 25vh;
+    } to {
+        height: 0vh;
+    }
+}

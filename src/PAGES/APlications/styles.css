@@ -1,34 +1,83 @@
 ._aplications {
   position: relative;
   min-height: 100vh;
+
+  z-index: 999;
+
 }
 .container_app_test{
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  
 
   height: 75%;
   width: 96.5%;
-  padding: 2rem;
+  padding: 2rem 0;
 
   bottom:0.3%;
   right:0.3%;
+  /* top: 30%; config notbook*/
+
+  z-index: 9999;
+
+  color: rgb(249, 249, 249);
 }
 .container_app_test h2{
-  text-decoration: underline;
+  text-align: center;
+  color: #956172;
+  cursor: pointer;
+
 }
 .content_aplications_to_test{
+  
   display: flex;
-  gap: 1rem;
-  justify-content: space-between;
+  justify-content:space-evenly;
   width: 100%;
   height: 100%;
 
   padding: 2rem 0;
+
 }
 .content_cards{
+
   text-align: center;
-  background-color: rgba(108, 108, 108, 0.567);
+  background-color: rgba(108, 108, 108, 0.283);
   border: 1px solid rgba(206, 206, 206, 0.359);
 
-  width: calc(100% / 3);
+  width: 45rem;
   padding: 2rem;
+}
+.content_cards h3{
+  color: #956172;
+}
+.content_pages{
+  margin-top: 2rem;
+  height: 4rem;
+  width: 100%;
+}
+.content_pages ul{
+
+  width: 100%;
+  height: 100%;
+}
+.content_pages ul li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  list-style: none;
+
+  width: 100%;
+  height: 100%;
+}
+.content_pages ul li a{
+  cursor: pointer;
+  color: rgb(249, 249, 249);
+
+  font-size: 1.7rem;
+}
+.content_pages ul li a:hover{
+  text-decoration: underline;
 }

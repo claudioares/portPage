@@ -19,6 +19,28 @@ import greenCurriculum from '../assets/about/icons/curriculum/green.svg';
 
 
 
+export const modelPages = [
+
+    [ 
+        {title: 'Modelo Veterinária', pLink: '#'},
+        {title: 'Modelo FestFood', pLink: '#'},
+        {title: 'Modelo Escola', pLink: '#'}
+    ],
+    [
+        {title: 'App Cobranças', pLink: '#'},
+        {title: 'App Controle de estoque', pLink: '#'},
+        {title: 'App Agendamento', pLink: '#'},
+        {title: 'App Apostas', pLink: '#'},
+        {title: 'App Gerenciamento de alunos', pLink: '#'},
+    ],
+    [
+        {title: 'Game Run', pLink: '#'},
+        {title: 'Jogo da velha', pLink: '#'},
+        {title: 'Jogo da memoria', pLink: '#'},
+    ]
+
+]
+
 
 export const iconsColors = [
     {

@@ -14,7 +14,8 @@ const IconToNavegation = () =>{
         activeMauseOver,
         activeMouseOut,
         iconsColorsAll,
-        activeIconSelect
+        activeIconSelect,
+        iconPosition
     } = useContext(ContextHoverProvider)
 
     const [classActiveAnimateIcons, setClassActiveAniteIcons] = useState(
@@ -35,6 +36,7 @@ const IconToNavegation = () =>{
                         onClick={(e)=>activeIconSelect(e)}
                         onMouseOver={(e)=>activeMauseOver(e)}
                         onMouseOut={(e)=>activeMouseOut(e)}
+                        style={iconPosition.experience}
                     >
                         <img src={iconsColorsAll.experience} alt="icone de experiencia" id='experience' />
                     </div>

@@ -1,4 +1,5 @@
-import { createContext, useState } from 'react';
+import { createContext, useState, useContext } from 'react';
+import {ContextApi} from './ContextApi'
 import {iconsColors} from '../utils';
 
 
@@ -15,104 +16,24 @@ export default function HoverProvider ({children}) {
         curriculum: iconsColors[0].curriculum.white
     })
 
-    const [click, setClick] = useState(false)
+    let setClick = false;
 
-    const activeMauseOver = (e) =>{
-        if(click === false){
-            if(e.target.id === 'experience'){
-                setIconColorsAll({
-                    experience: iconsColors[0].experience.metalic,
-                    formation: iconsColors[0].formations.white,
-                    project: iconsColors[0].projects.white,
-                    curriculum: iconsColors[0].curriculum.white
-                })
-            }
-            if(e.target.id === 'formation'){
-                setIconColorsAll({
-                    experience: iconsColors[0].experience.white,
-                    formation: iconsColors[0].formations.pink,
-                    project: iconsColors[0].projects.white,
-                    curriculum: iconsColors[0].curriculum.white
-                })
-            }
-            if(e.target.id === 'project'){
-                setIconColorsAll({
-                    experience: iconsColors[0].experience.white,
-                    formation: iconsColors[0].formations.white,
-                    project: iconsColors[0].projects.yellow,
-                    curriculum: iconsColors[0].curriculum.white
-                })
-            }
-            if(e.target.id === 'curriculum'){
-                setIconColorsAll({
-                    experience: iconsColors[0].experience.white,
-                    formation: iconsColors[0].formations.white,
-                    project: iconsColors[0].projects.white,
-                    curriculum: iconsColors[0].curriculum.green
-                })
-            }
-        }
-
-    }
-
-    const activeMouseOut = () =>{
-        if(click === false){
-            setIconColorsAll({
-                experience: iconsColors[0].experience.white,
-                formation: iconsColors[0].formations.white,
-                project: iconsColors[0].projects.white,
-                curriculum: iconsColors[0].curriculum.white
-            })
-        }
-    }
-
-
-    const [displayModal, setDisplayModal] = useState(
-        {
-            display: false,
-            class: 'container_modal'
-        }
-    );
     const [iconPosition, setIconPosition] = useState({
         experience : {
             right:'', 
             top:'',
         }
     });
+
+
+    
     const activeIconSelect = (e) =>{
-        setClick(true);
+        setClick = true;
         if(e.target.id === 'experience'){
             setIconColorsAll({
                 ...iconsColorsAll,
                 experience: iconsColors[0].experience.metalic,
-            });
-
-            if(iconPosition.experience.right === ''){
-                setIconPosition({
-                    experience : {
-                        transform:'translate(900%,-100%)',
-                        border: '3px solid rgb(129, 203, 197)'
-                    }
-                });
-                setTimeout(()=>{
-                    setDisplayModal(
-                        {
-                            display: true,
-                            class: 'container_modal modal_animetion_open'
-                        }
-                    )
-                }, 1200)
-            } else {
-                setIconPosition({
-                    experience : {right:'', top:''}
-                }),
-                setDisplayModal(
-                    {
-                        display: false,
-                        class: 'container_modal modal_animation_close'
-                    }
-                )
-            }
+            })
         }
         if(e.target.id === 'formation'){
             setIconColorsAll({
@@ -135,19 +56,13 @@ export default function HoverProvider ({children}) {
     }
 
     function resetStateInit () {
-        setClick(false);
+        setClick = false;
         setIconColorsAll({
             experience: iconsColors[0].experience.white,
             formation: iconsColors[0].formations.white,
             project: iconsColors[0].projects.white,
             curriculum: iconsColors[0].curriculum.white
         });
-        setDisplayModal(
-            {
-                display: false,
-                class: 'container_modal'
-            }
-        );
         setIconPosition({
             experience : {
                 right:'', 
@@ -156,11 +71,13 @@ export default function HoverProvider ({children}) {
         })
     }
 
+  
+   
     return(
         <ContextHoverProvider.Provider value={{
-            activeMauseOver, activeMouseOut, iconsColorsAll,
-            activeIconSelect, resetStateInit, iconPosition,
-            displayModal, setDisplayModal
+            iconsColorsAll, activeIconSelect, resetStateInit, 
+            iconPosition,
+          
         }}>
             {children}
         </ContextHoverProvider.Provider>

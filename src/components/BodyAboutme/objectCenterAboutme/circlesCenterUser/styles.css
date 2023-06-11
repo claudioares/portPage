@@ -1,0 +1,49 @@
+.circle_ {
+    border-radius: 50%;
+}
+.circle_ :hover{
+    border: 3px solid #50c9de43;
+}
+
+.one{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 14rem;
+    height: 14rem;
+    
+    border: 3px solid #343B47;
+    border-style:dashed;
+    
+    cursor: pointer;
+
+    z-index: 1;
+
+}
+.two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 12rem;
+    height: 12rem;
+    
+    border: 1px solid #705353;
+}
+
+.tree{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 9.5rem;
+    height: 9.5rem;
+    
+    border: 1px solid #705353;
+    background-color: #705353;
+    border-style: dashed;
+}
+

@@ -1,0 +1,20 @@
+.align_icon{
+    transform: rotate(1deg);
+    transition-duration: 1.5s;
+}
+.experience{
+    left: 18rem;
+    top: -10.5rem;
+}
+.formation{
+    right:-7rem;
+    top: 2rem;
+}
+.curriculum{
+    bottom: 2rem;
+    right: -7rem;
+}
+.project{
+    bottom: -10.5rem;
+    left: 18rem;
+}

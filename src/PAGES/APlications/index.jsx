@@ -1,6 +1,6 @@
 import './styles.css';
 import PanelCards from "../../components/PanelCards";
-import BgGear from '../../components/BodyAboutme/bgGear';
+import BgGear from '../../components/bgGear';
 import {modelPages} from '../../utils'
 
 

@@ -1,12 +1,15 @@
 import './styles.css';
 import Typing from '../../components/typing';
-import BgGear from '../../components/BodyAboutme/bgGear';
+import BgGear from '../../components/bgGear';
+import Gear from '../../components/Gear';
+
 
 export default function Init () {
 
     return (
         <>
             <div className="container init">
+                    <BgGear />
                     <div className="left">
                         <h1>Cláudio Soares</h1>
                         <Typing 
@@ -14,7 +17,7 @@ export default function Init () {
                         />
                     </div>
                     <div className="right" >
-                        <BgGear />
+                        <Gear />
                     </div>
             </div>
         </>

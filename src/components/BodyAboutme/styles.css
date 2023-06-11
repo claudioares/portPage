@@ -14,69 +14,11 @@
 
 }
 
-.contaier_circles{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
-    height: 100%;
-
-}
-.circle_ {
-    
-    border-radius: 50%;
-    
-}
-.circle_ :hover{
-    border: 3px solid #50c9de43;
-}
-
-.one{
+.container_objects_center_aboutme{
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    width: 14rem;
-    height: 14rem;
-    
-    border: 3px solid #343B47;
-    border-style:dashed;
-    
-    cursor: pointer;
-}
-.two{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    width: 12rem;
-    height: 12rem;
-    
-    border: 1px solid #705353;
-}
 
-.tree{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 9.5rem;
-    height: 9.5rem;
-    
-    border: 1px solid #705353;
-    background-color: rgb(221, 221, 221);
-    border-style: dashed;
-}
-
-
-.userImg{
-    position: absolute;
-    width: 9rem;
-    height: 9rem;
-
-    border-radius: 50%;
-   
+    left: 7rem;
 }

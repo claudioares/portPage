@@ -1,0 +1,6 @@
+.container_gear{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

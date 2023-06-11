@@ -4,6 +4,7 @@
 @import url("./colorsGlobal.css");
 @import url("./circleRotation.css");
 @import url("./iconConfig.css");
+@import url("./notebook.css");
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +20,7 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 
-  min-height: 100vh;
+  height: 100vh;
   background-color: #121216;
   font-size: 1.6rem;
   margin: 0;
@@ -33,21 +34,4 @@ a {
   cursor: pointer;
 }
 
-@media (max-width: 1104px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
 
-  .left {
-    top: -25%;
-    left: 33.5%;
-  }
-  .right {
-    right: 11.5%;
-  }
-  .right img {
-    width: 60rem;
-    height: 60rem;
-  }
-}

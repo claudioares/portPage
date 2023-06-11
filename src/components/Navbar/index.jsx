@@ -42,7 +42,6 @@ export default function Navbar () {
     }
     return(
         <div className="container_navbar">
-            <nav className='navbar_nav'>
                 {iconSocialContact.map(obj => (
                     <div key={obj.alt}>
                         <img 
@@ -53,10 +52,9 @@ export default function Navbar () {
                     </div>
                 ))
                 }
-                <div className="line">
-                    <img src={line} alt="Linha colorida" />
-                </div>
-            </nav>
+                <>
+                    <img src={line} alt="Linha colorida" className='line'/>
+                </>
         </div>
     )
 }

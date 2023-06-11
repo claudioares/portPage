@@ -1,9 +1,6 @@
 ._aplications {
   position: relative;
-  min-height: 100vh;
-
   z-index: 999;
-
 }
 .container_app_test{
   position: absolute;
@@ -17,7 +14,6 @@
 
   bottom:0.3%;
   right:0.3%;
-  /* top: 30%; config notbook*/
 
   z-index: 9999;
 

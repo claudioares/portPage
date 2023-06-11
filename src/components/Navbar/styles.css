@@ -4,22 +4,22 @@
   height: calc(100vh - 6rem);
 
   background: #121216;
+  overflow: hidden;
 
-  z-index: 9999;
-}
-.navbar_nav {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2.6rem;
   align-items: center;
   padding-top: 37.6rem;
+
+  z-index: 9999;
 }
-.navbar_nav img {
+.container_navbar img {
   cursor: pointer;
   transition: 5s;
 }
-
-.line img {
-  cursor: none;
+.line{
+  cursor:none;
 }

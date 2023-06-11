@@ -11,44 +11,47 @@ import { useState } from 'react';
 
 export default function Navbar () {
     const [iconSocialContact, SetIconSocialContact] = useState([
-        {icon:link, alt: 'Logo do linkedin'},
-        {icon:whats, alt: 'Logo do whatsapp'},
-        {icon:git, alt: 'Logo do github'}
+        {icon:link, alt: 'Logo do linkedin', socialLink:'https://www.linkedin.com/in/claudio-soares-dev/'},
+        {icon:whats, alt: 'Logo do whatsapp', socialLink:''},
+        {icon:git, alt: 'Logo do github', socialLink:'https://github.com/claudioares'}
     ])
     function mauseOver (e) {
         let selectLogo = e.target.alt;
         selectLogo === 'Logo do linkedin' && SetIconSocialContact([
-            {icon:linkHover, alt: 'Logo do linkedin'},
-            {icon:whats, alt: 'Logo do whatsapp'},
-            {icon:git, alt: 'Logo do github'}
+            {icon:linkHover, alt: 'Logo do linkedin', socialLink:'https://www.linkedin.com/in/claudio-soares-dev/'},
+            {icon:whats, alt: 'Logo do whatsapp', socialLink:''},
+            {icon:git, alt: 'Logo do github', socialLink:'https://github.com/claudioares'}
         ]);
         selectLogo === 'Logo do whatsapp' && SetIconSocialContact([
-            {icon:link, alt: 'Logo do linkedin'},
-            {icon:whatsHover, alt: 'Logo do whatsapp'},
-            {icon:git, alt: 'Logo do github'}
+            {icon:link, alt: 'Logo do linkedin', socialLink:'https://www.linkedin.com/in/claudio-soares-dev/'},
+            {icon:whatsHover, alt: 'Logo do whatsapp', socialLink:''},
+            {icon:git, alt: 'Logo do github', socialLink:'https://github.com/claudioares'}
         ]);
         selectLogo === 'Logo do github' && SetIconSocialContact([
-            {icon:link, alt: 'Logo do linkedin'},
-            {icon:whats, alt: 'Logo do whatsapp'},
-            {icon:gitHover, alt: 'Logo do github'}
+            {icon:link, alt: 'Logo do linkedin', socialLink:'https://www.linkedin.com/in/claudio-soares-dev/'},
+            {icon:whats, alt: 'Logo do whatsapp', socialLink:''},
+            {icon:gitHover, alt: 'Logo do github', socialLink:'https://github.com/claudioares'}
         ]);
     }
     function mouseOut () {
         SetIconSocialContact([
-            {icon:link, alt: 'Logo do linkedin'},
-            {icon:whats, alt: 'Logo do whatsapp'},
-            {icon:git, alt: 'Logo do github'}
+            {icon:link, alt: 'Logo do linkedin', socialLink:'https://www.linkedin.com/in/claudio-soares-dev/'},
+            {icon:whats, alt: 'Logo do whatsapp', socialLink:''},
+            {icon:git, alt: 'Logo do github', socialLink:'https://github.com/claudioares'}
         ]);
     }
+
     return(
         <div className="container_navbar">
                 {iconSocialContact.map(obj => (
                     <div key={obj.alt}>
-                        <img 
-                            src={obj.icon} alt={obj.alt}
-                            onMouseOver={(e)=>mauseOver(e)}
-                            onMouseOut={()=>mouseOut()}
-                        />
+                        <a href={obj.socialLink} target='_blank'>
+                            <img 
+                                src={obj.icon} alt={obj.alt}
+                                onMouseOver={(e)=>mauseOver(e)}
+                                onMouseOut={()=>mouseOut()}
+                            />
+                        </a>
                     </div>
                 ))
                 }

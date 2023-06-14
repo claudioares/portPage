@@ -3,9 +3,7 @@ import './styles.css';
 
 export default function PanelCards() {
   
-
     return (
-    
         <div className='divProjects' id='aplicacoes'>   
             <div className="conainer_carousel">
                 {cards.map(card => (

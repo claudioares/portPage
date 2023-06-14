@@ -30,6 +30,7 @@ const AboutmeBody = () =>{
                 <div className="container_objects_center_aboutme " >
                     <ObjectCenterAboutme />
                 </div>
+                
                 <Card 
                     cardOne={card.cardOne}
                     rightPosition='9rem'

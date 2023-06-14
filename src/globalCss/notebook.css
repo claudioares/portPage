@@ -2,4 +2,8 @@
     .container_app_test{
         top: 30%;
     }
+    .container_card{
+      margin: 15rem;
+
+    }
 }

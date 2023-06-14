@@ -8,7 +8,7 @@ const AboutmeBody = () =>{
 
     const card = {
         cardOne:{
-            spanOne:'Sou graduando em Inteligencia Artificial pela Cruzeiro do Sul e já desenvolvo a mais de um ano.',
+            spanOne:`Já desenvolvo a mais de um ano e sou graduando em Inteligencia Artificial pela`,
             spanTwoOne:'Cursei 8 meses de desenvolvimento de software pela Cubos Academy',
         },
         cardTwo: {
@@ -32,9 +32,13 @@ const AboutmeBody = () =>{
                 </div>
                 <Card 
                     cardOne={card.cardOne}
+                    rightPosition='5rem'
+                    topPosition='4rem'
                 />
                 <Card 
                     cardTwo={card.cardTwo}
+                    rightPosition='5rem'
+                    bottomPosition='4rem'
                 />
 
             </div>

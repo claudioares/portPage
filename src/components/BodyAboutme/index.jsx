@@ -9,7 +9,7 @@ const AboutmeBody = () =>{
     const card = {
         cardOne:{
             spanOne:`Já desenvolvo a mais de um ano e sou graduando em Inteligencia Artificial pela`,
-            spanTwo:'Cursei 8 meses de desenvolvimento de software pela Cubos Academy',
+            spanTwo:'Cursei 8 meses de desenvolvimento de software pela ',
         },
         cardTwo: {
             spanTwo:'Estudo conceitos de desenvolvimento:',

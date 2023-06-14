@@ -12,15 +12,18 @@ const Card = ({cardOne, cardTwo, rightPosition, bottomPosition, topPosition}) =>
                     top:topPosition
                 }}>
                 {cardOne && <div className="card_one">
-                    <div className='line_one'>
+                    <div className='line'>
                         <span>
                             {cardOne.spanOne }
                         </span>
                         <a href="https://www.unicid.edu.br/" target='_blank'> UNICID | Universidade Cidade de São Paulo</a>
                     </div>
-                    <span>
-                        {cardOne.spanTwo}
-                    </span>   
+                    <div className="line">
+                        <span>
+                            {cardOne.spanTwo}
+                        </span>   
+                        <a href="https://cubos.academy/" target='_blank'>Cubos Academy</a>
+                    </div>
                 </div>}
                 {cardTwo && <div className="card_two">
                     <span>

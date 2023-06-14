@@ -16,7 +16,17 @@
     z-index: 9999;
 }
 .card_one{
-    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+}
+.line_one a{
+    text-decoration: none;
+    color: #964862;
+}
+.line_one a:hover{
+    text-decoration: underline;
 }
 .card_two{
     display: flex;

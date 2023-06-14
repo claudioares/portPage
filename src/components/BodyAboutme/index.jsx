@@ -9,12 +9,12 @@ const AboutmeBody = () =>{
     const card = {
         cardOne:{
             spanOne:`Já desenvolvo a mais de um ano e sou graduando em Inteligencia Artificial pela`,
-            spanTwoOne:'Cursei 8 meses de desenvolvimento de software pela Cubos Academy',
+            spanTwo:'Cursei 8 meses de desenvolvimento de software pela Cubos Academy',
         },
         cardTwo: {
             spanTwo:'Estudo conceitos de desenvolvimento:',
             p:{
-                oneP:'Ideialização, organização, compreenção das regras de negocio do projeto.',
+                oneP:'Ideialização, organização, compreenção das regras de negocio de projeto.',
                 twoP:'Tecnologias a serem usada para desenvolvimento',
                 treeP:'Versionamento de codigos e deploy pra produção de fato'
             }
@@ -32,13 +32,13 @@ const AboutmeBody = () =>{
                 </div>
                 <Card 
                     cardOne={card.cardOne}
-                    rightPosition='5rem'
-                    topPosition='4rem'
+                    rightPosition='9rem'
+                    topPosition='18rem'
                 />
                 <Card 
                     cardTwo={card.cardTwo}
-                    rightPosition='5rem'
-                    bottomPosition='4rem'
+                    rightPosition='9rem'
+                    bottomPosition='18rem'
                 />
 
             </div>

@@ -11,29 +11,31 @@ const Card = ({cardOne, cardTwo, rightPosition, bottomPosition, topPosition}) =>
                     bottom:bottomPosition,
                     top:topPosition
                 }}>
-                <div className="card_one">
+                {cardOne && <div className="card_one">
+                    <div className='line_one'>
+                        <span>
+                            {cardOne.spanOne }
+                        </span>
+                        <a href="https://www.unicid.edu.br/" target='_blank'> UNICID | Universidade Cidade de São Paulo</a>
+                    </div>
                     <span>
-                        {cardOne && cardOne.spanOne }
-                    </span>
-                    <a href="https://www.unicid.edu.br/">UNICID | Universidade Cidade de São Paulo</a>
-                    <span>
-                        {cardOne && cardOne.spanTwo}
+                        {cardOne.spanTwo}
                     </span>   
-                </div>
-                <div className="card_two">
+                </div>}
+                {cardTwo && <div className="card_two">
                     <span>
-                        {cardTwo && cardTwo.spanTwo}   
+                        {cardTwo.spanTwo}   
                     </span>
                     <p>
-                        {cardTwo && cardTwo.p.oneP}
+                        {cardTwo.p.oneP}
                     </p>
                     <p>
-                        {cardTwo && cardTwo.p.twoP}
+                        {cardTwo.p.twoP}
                     </p>
                     <p>
-                        {cardTwo && cardTwo.p.treeP}
+                        {cardTwo.p.treeP}
                     </p>
-                </div>
+                </div>}
             </div>
         </>
     )

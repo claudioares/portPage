@@ -4,16 +4,43 @@
     justify-content: center;
 
     position: absolute;
+    overflow: hidden;
     padding: 3rem;
 
     width: 40rem;
     height: 25rem;
     font-size:1.5rem;
     background-color: rgba(255, 255, 255, 0.034);
+    border: 1px solid #964862;
     border-radius: 3rem;
     
     
     z-index: 9999;
+
+    animation: appear 1.5s linear;
+}
+@keyframes appear {
+    from{
+        width: 40rem;
+        height: 0rem;
+        border: 1px solid gray;
+    } 25% {
+        width: 40rem;
+        height: 6rem;
+        border: 1px solid gray;
+    } 50%{
+        width: 40rem;
+        height: 12rem;
+        border: 1px solid #634c54;
+    } 75%{
+        width: 40rem;
+        height: 18rem;
+        border: 1px solid #964862;
+    } to {
+        width: 40rem;
+        height: 25rem;
+        border: 1px solid #964862;
+    }
 }
 .card_one{
     display: flex;

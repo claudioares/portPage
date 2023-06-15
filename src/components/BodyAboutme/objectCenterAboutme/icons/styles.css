@@ -1,6 +1,9 @@
 .align_icon{
     transform: rotate(1deg);
-    transition-duration: 1.5s;
+    transition-duration: 1s;
+}
+.align_icon:hover{
+    border: 1px solid #964862;
 }
 .experience{
     left: 18rem;

@@ -1,7 +1,6 @@
 import { useContext } from 'react';
 import { ContextApi } from '../../../../Contexts/ContextApi';
 import { ContextHoverProvider } from '../../../../Contexts/ContextFunctionsHover';
-import imgUser from '../../../../assets/user.svg';
 import './styles.css';
 
 const LinesCirclesOfUser = () => {

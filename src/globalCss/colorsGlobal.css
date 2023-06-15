@@ -2,7 +2,7 @@
   color: #964862;
 }
 .yellow {
-  color: yellow;
+  color: rgba(255, 174, 0, 0.811);
 }
 .green {
   color: rgb(21, 119, 119);
@@ -14,6 +14,3 @@
   color: white;
 }
 
-a:hover {
-  color: #964862;
-}

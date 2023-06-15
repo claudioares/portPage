@@ -33,7 +33,7 @@
   line-height: 1.8rem;
 
   color: #808080;
-  cursor: pointer;
+  /* cursor: pointer; */
 
   transition: 0.2s;
 }

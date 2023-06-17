@@ -18,7 +18,7 @@ const Gear = ({stateDisplay, gearSelectWidth}) => {
             setStateRotationGearCenter(
                 'gcenterWhite rotation'
             )
-        }, 4000)
+        }, 2500)
 
     },[stateRotationGearCenter])
     return(

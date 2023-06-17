@@ -1,5 +1,6 @@
 .container_card{
     display: flex;
+    
     flex-direction: column;
     justify-content: center;
 
@@ -7,8 +8,6 @@
     overflow: hidden;
     padding: 3rem;
 
-    width: 40rem;
-    height: 25rem;
     font-size:1.5rem;
     background-color: rgba(255, 255, 255, 0.034);
     border: 1px solid #964862;
@@ -17,31 +16,36 @@
     
     z-index: 9999;
 
-    animation: appear 1.5s linear;
 }
-@keyframes appear {
+.open_card{
+    width: 40rem;
+    height: 18rem;
+    animation: open-card 2s linear;
+}
+@keyframes open-card {
     from{
-        width: 40rem;
+        width: 0rem;
         height: 0rem;
         border: 1px solid gray;
     } 25% {
-        width: 40rem;
-        height: 6rem;
+        width: 20rem;
+        height: 4.5rem;
         border: 1px solid gray;
     } 50%{
         width: 40rem;
-        height: 12rem;
+        height: 8.5rem;
         border: 1px solid #634c54;
     } 75%{
         width: 40rem;
-        height: 18rem;
+        height: 12.5rem;
         border: 1px solid #964862;
     } to {
         width: 40rem;
-        height: 25rem;
+        height: 18rem;
         border: 1px solid #964862;
     }
 }
+
 .card_one{
     display: flex;
     flex-direction: column;
@@ -64,4 +68,37 @@
 }
 .card_two p{
     margin-left: 2rem;
+}
+
+
+.close_card{
+    animation: close-card 1.5s linear;
+    width: 0;
+    height: 0;
+}
+
+@keyframes close-card {
+    from{
+        width: 40rem;
+        height: 18rem;
+        border: 1px solid #964862;
+    } 25% {
+        width: 40rem;
+        height: 12.5rem;
+        border: 1px solid #964862;
+    } 50%{
+        width: 40rem;
+        height: 8.5rem;
+        border: 1px solid #634c54;
+    } 75%{   
+        width: 30rem;
+        height: 4.5rem;
+        border: 1px solid gray;
+    } to {
+        width: 0rem;
+        height: 0rem;
+        border: 1px solid gray;
+
+        display: none;  
+    }
 }

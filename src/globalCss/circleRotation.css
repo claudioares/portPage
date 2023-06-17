@@ -1,5 +1,5 @@
 .rotation_init_gear{
-    animation: eventClick 4s ease-out;
+    animation: eventClick 2.5s ease-out;
 }
 @keyframes eventClick {
   
@@ -8,7 +8,7 @@
     }
 }
 .rotation_init{
-    animation: rotate_init 4s ease-in-out;
+    animation: rotate_init 2.5s ease-in-out;
 }
 @keyframes rotate_init {
     0%{

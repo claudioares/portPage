@@ -1,17 +1,23 @@
+import { useState } from 'react';
 import './styles.css';
 
 
 const Card = ({cardOne, cardTwo, rightPosition, bottomPosition, topPosition}) => {
 
+    const [ceateContetCards, setCreateContentCards] = useState(null);
+
+    setTimeout(()=>{
+        setCreateContentCards(true);
+    }, 2500)
 
     return (
         <>
-            <div className="container_card" style={{
+            <div className="container_card open_card" style={{
                     right:rightPosition,
                     bottom:bottomPosition,
                     top:topPosition
                 }}>
-                {cardOne && <div className="card_one">
+                {ceateContetCards && cardOne && <div className="card_one">
                     <div className='line'>
                         <span>
                             {cardOne.spanOne }
@@ -25,7 +31,7 @@ const Card = ({cardOne, cardTwo, rightPosition, bottomPosition, topPosition}) =>
                         <a href="https://cubos.academy/" target='_blank'>Cubos Academy</a>
                     </div>
                 </div>}
-                {cardTwo && <div className="card_two">
+                {ceateContetCards && cardTwo && <div className="card_two">
                     <span>
                         {cardTwo.spanTwo}   
                     </span>
